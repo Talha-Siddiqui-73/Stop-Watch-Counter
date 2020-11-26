@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/98edff5ef3.js" crossorigin="anonymous"></script>
+    
+    <title>Stop Watch Counter | Talha Siddiqui</title>
+</head>
+<body>
+
+
+    <div class="wrap">
+
+        <div id="timer">
+
+            <svg width="260" height="260">
+                <circle class="defaultCircle" cx="125" cy="125" r="120" stroke="#ff88fb"
+                 stroke-width="10" fill="none" stroke-linecap="round" />
+                 <circle id="animateCircle" cx="125" cy="125" r="120" stroke="#d459cb"
+                 stroke-width="10" fill="none" stroke-linecap="round" />
+            </svg>
+
+            
+            <span id="min"> 00 </span> :
+            <span id="sec"> 00 </span> :
+            <span id="msec"> 00 </span>
+
+        </div>
+        <p>Your Time Starts Now</p>
+        <div class="option">
+            <a id="play" onclick="start();" href="javascript:void(0)" ><i class="fa fa-play"></i>
+            <i class="fa fa-pause"></i></a>
+            <a id="stop" onclick="stop();" href="javascript:void(0)"><i class="fa fa-stop"></i></a>
+            <a id="reset" onclick="reset();" href="javascript:void(0)"><i class="fa fa-undo"></i></a>
+
+        </div>
+
+    </div>
+
+
+
+    
+
+
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
